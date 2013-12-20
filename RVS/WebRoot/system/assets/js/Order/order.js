@@ -43,6 +43,7 @@ $(
                 orderModel([]);
             }
         }});
+        ko.applyBindings(orderModel);
     }
 )
 
