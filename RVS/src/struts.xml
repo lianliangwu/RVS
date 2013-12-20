@@ -15,7 +15,7 @@
 			<result-type name="rmpResource" class="edu.sjtu.istlab.rmp.rest.server.struts.RmpResultType"></result-type>
 		</result-types>
 
-		<action name="Register"  class="edu.sjtu.istlab.tuoche.action.Register">
+		<action name="Register"  class="edu.sjtu.istlab.rvs.action.Register">
 			<result name="success" type="rmpResource"><param name="resourceXML">sucessResult</param>	
 			</result>
 			<result name="error" type="rmpResource"><param name="resourceXML">errorResult</param>	

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Resource isMaster="true" isAssociation="false" isComposite="false">
 	<DBConfig>
-		<DBURL>localhost/tuoche/car</DBURL>
+		<DBURL>localhost/rvs/car</DBURL>
 		<UserName>root</UserName>
 		<Password>123456</Password>
 		<Driver>com.mysql.jdbc.Driver</Driver>
 	</DBConfig>
-	<URI>TuoChe/Car/{key}</URI>
+	<URI>RVS/Car/{key}</URI>
 	<Name>Car</Name>
 	<Description>Car</Description>
 	<OwnerPath></OwnerPath>
