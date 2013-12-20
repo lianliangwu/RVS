@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resource isMaster="true" isAssociation="false" isComposite="false">
+	<DBConfig>
+		<DBURL>localhost/tuoche/user</DBURL>
+		<UserName>root</UserName>
+		<Password>123456</Password>
+		<Driver>com.mysql.jdbc.Driver</Driver>
+	</DBConfig>
+	<URI>TuoChe/User/{key}</URI>
+	<Name>User</Name>
+	<Description>User</Description>
+	<OwnerPath></OwnerPath>
+	<Super />
+	<Attributes>
+		<Column>
+			<ColumnName>user_email</ColumnName>
+			<AttributeName>邮箱</AttributeName>
+			<NotNull>yes</NotNull>
+			<Super />
+			<Type>String</Type>
+		</Column>
+		<Column>
+			<ColumnName>user_password</ColumnName>
+			<AttributeName>密码</AttributeName>
+			<NotNull>yes</NotNull>
+			<Super />
+			<Type>String</Type>
+		</Column>
+	</Attributes>
+	<Conditions>
+	</Conditions>
+</Resource>

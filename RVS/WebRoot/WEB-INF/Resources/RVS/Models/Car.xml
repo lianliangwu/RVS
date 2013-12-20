@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resource isMaster="true" isAssociation="false" isComposite="false">
+	<DBConfig>
+		<DBURL>localhost/tuoche/car</DBURL>
+		<UserName>root</UserName>
+		<Password>123456</Password>
+		<Driver>com.mysql.jdbc.Driver</Driver>
+	</DBConfig>
+	<URI>TuoChe/Car/{key}</URI>
+	<Name>Car</Name>
+	<Description>Car</Description>
+	<OwnerPath></OwnerPath>
+	<Super />
+	<Attributes>
+		<Column>
+			<ColumnName>car_name</ColumnName>
+			<AttributeName>车名</AttributeName>
+			<NotNull>yes</NotNull>
+			<Super />
+			<Type>String</Type>
+		</Column>
+		<Column>
+			<ColumnName>car_owner</ColumnName>
+			<AttributeName>车主</AttributeName>
+			<NotNull>yes</NotNull>
+			<Super />
+			<Type>String</Type>
+		</Column>
+		<Column>
+			<ColumnName>car_type</ColumnName>
+			<AttributeName>车型号</AttributeName>
+			<NotNull>no</NotNull>
+			<Super />
+			<Type>String</Type>
+		</Column>
+	</Attributes>
+	<Conditions>
+	</Conditions>
+</Resource>
