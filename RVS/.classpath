@@ -5,5 +5,19 @@
 	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_6_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="F:/RMP/RMP_1.4_Version_Education/WebRoot/WEB-INF/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="F:/RMP/RMP_1.4_Version_Education/WebRoot/WEB-INF/lib/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="F:/RMP/RMP_1.4_Version_Education/WebRoot/WEB-INF/lib/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="F:/RMP/RMP_1.4_Version_Education/WebRoot/WEB-INF/lib/fluent-hc-4.2.5.jar"/>
+	<classpathentry kind="lib" path="F:/RMP/RMP_1.4_Version_Education/WebRoot/WEB-INF/lib/freemarker-2.3.19.jar"/>
+	<classpathentry kind="lib" path="F:/RMP/RMP_1.4_Version_Education/WebRoot/WEB-INF/lib/javassist-3.11.0.GA.jar"/>
+	<classpathentry kind="lib" path="F:/RMP/RMP_1.4_Version_Education/WebRoot/WEB-INF/lib/jaxen-1.1-beta-6.jar"/>
+	<classpathentry kind="lib" path="F:/RMP/RMP_1.4_Version_Education/WebRoot/WEB-INF/lib/json-lib-2.3-jdk15.jar"/>
+	<classpathentry kind="lib" path="F:/RMP/RMP_1.4_Version_Education/WebRoot/WEB-INF/lib/mail.jar"/>
+	<classpathentry kind="lib" path="F:/RMP/RMP_1.4_Version_Education/WebRoot/WEB-INF/lib/ognl-3.0.6.jar"/>
+	<classpathentry kind="lib" path="F:/RMP/RMP_1.4_Version_Education/WebRoot/WEB-INF/lib/rmp-server-1.4.jar"/>
+	<classpathentry kind="lib" path="F:/RMP/RMP_1.4_Version_Education/WebRoot/WEB-INF/lib/struts2-core-2.3.15.2.jar"/>
+	<classpathentry kind="lib" path="F:/RMP/RMP_1.4_Version_Education/WebRoot/WEB-INF/lib/struts2-json-plugin-2.3.15.2.jar"/>
+	<classpathentry kind="lib" path="F:/RMP/RMP_1.4_Version_Education/WebRoot/WEB-INF/lib/xwork-core-2.3.15.2.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
