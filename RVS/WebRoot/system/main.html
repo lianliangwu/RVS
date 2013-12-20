@@ -52,9 +52,9 @@
 	<!-- the nav-buttons -->
 	<div class="row container text-center">
 		<div class="btn-group ">
-			<button type="button" class="btn btn-default "  onclick="viewPaper();">维修记录<span class="glyphicon glyphicon-user"></span>
+			<button type="button" class="btn btn-default btn-lg"  onclick="viewPaper();">维修记录<span class="glyphicon glyphicon-user"></span>
 			</button>
-			<button type="button" class="btn btn-default "  onClick="location.href='../Submission/postpaperstep1.html'">	呼叫拖车<span class="glyphicon glyphicon-star"></span>
+			<button class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#myModal">	呼叫拖车 <span class="glyphicon glyphicon-star"></span>
 			</button>
 		</div>
 	</div>
@@ -87,6 +87,25 @@
                 </tr>
             </tbody>
 		</table>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog">
+		    <div class="modal-content">
+		        <div class="modal-header">
+		        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        	<h4 class="modal-title" id="myModalLabel">呼叫拖车</h4>
+		      	</div>
+		        <div class="modal-body">
+		        
+		      	</div>
+		        <div class="modal-footer">
+		        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        	<button type="button" class="btn btn-primary">Submit</button>
+		        </div>
+		    </div>
+	    </div>
 	</div>
 
 	<script type="text/javascript" src="assets/js/Order/rmp.z4x.js"></script>
