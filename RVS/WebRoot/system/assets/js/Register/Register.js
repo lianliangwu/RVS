@@ -31,12 +31,12 @@ function oerrmess(code){
 function tuoche_register(){
 	
 	$.ajax({
-		url:"/tuoche/struts/tuoche/Register.action?user_email="
+		url:"/RVS/struts/RVS/Register.action?user_email="
 			+$("#emailAddress").val()+"&user_password="+$("#password").val(),
 		success:function(data){
 		var json = $.z4x(data);
 		if(json.success){
-			window.location.href="/tuoche/system/login.html";
+			window.location.href="/RVS/system/login.html";
 		}
 		else{
 			alert("Error Code: Register failed");
@@ -48,7 +48,7 @@ function tuoche_register(){
 
 function login(){
 	$.ajax({
-		url:"/tuoche/resource/tuoche/user/?user_email="+$("#emailAddress").val()+"&user_password="+$("#password").val(),
+		url:"/RVS/resource/rvs/user/?user_email="+$("#emailAddress").val()+"&user_password="+$("#password").val(),
 		headers:{
 			username:$("#emailAddress").val(),
 			password:$("#password").val()
@@ -60,7 +60,7 @@ function login(){
 			if(error.length==0 && records != undefined ){
 				$.cookie('username', $("#emailAddress").val(),{path:'/'});
 				$.cookie('password',$("#password").val(),{path:'/'});
-				window.location.href="/tuoche/system/main.html";
+				window.location.href="/RVS/system/main.html";
 			}
 			else{
 				$("#loginerrmess").append("<em style='color:#FF0000'>email or password is wrong</em>");
