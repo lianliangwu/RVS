@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resource isMaster="true" isAssociation="false" isComposite="false">
+	<DBConfig>
+		<DBURL>localhost/rvs/order</DBURL>
+		<UserName>root</UserName>
+		<Password>123456</Password>
+		<Driver>com.mysql.jdbc.Driver</Driver>
+	</DBConfig>
+	<URI>RVS/Order/{key}</URI>
+	<Name>Order</Name>
+	<Description>Order</Description>
+	<OwnerPath></OwnerPath>
+	<Super />
+	<Attributes>
+		<Column>
+			<ColumnName>car_name</ColumnName>
+			<AttributeName>维修车型</AttributeName>
+			<NotNull>no</NotNull>
+			<Super />
+			<Type>String</Type>
+		</Column>
+		<Column>
+			<ColumnName>car_location</ColumnName>
+			<AttributeName>维修地点</AttributeName>
+			<NotNull>no</NotNull>
+			<Super />
+			<Type>String</Type>
+		</Column>
+		<Column>
+			<ColumnName>company</ColumnName>
+			<AttributeName>维修公司</AttributeName>
+			<NotNull>no</NotNull>
+			<Super />
+			<Type>String</Type>
+		</Column>
+		<Column>
+			<ColumnName>company_car_code</ColumnName>
+			<AttributeName>拖车编号</AttributeName>
+			<NotNull>no</NotNull>
+			<Super />
+			<Type>String</Type>
+		</Column>
+		<Column>
+			<ColumnName>fee</ColumnName>
+			<AttributeName>维修费用</AttributeName>
+			<NotNull>no</NotNull>
+			<Super />
+			<Type>String</Type>
+		</Column>
+		<Column>
+			<ColumnName>status</ColumnName>
+			<AttributeName>状态</AttributeName>
+			<NotNull>no</NotNull>
+			<Super />
+			<Type>String</Type>
+		</Column>
+	</Attributes>
+	<Conditions>
+	</Conditions>
+</Resource>
