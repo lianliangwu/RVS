@@ -1,0 +1,104 @@
+body.page {
+	overflow: auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+body.signup {
+	background: #F3F5F8;
+}
+
+body {
+	font-family: 'proxima-nova', Proxima Nova, 'Helvetica Neue', Helvetica,
+		sans-serif;
+}
+
+.navbar {
+	background: #fff;
+	padding-left: 0;
+	border-radius: 0;
+}
+
+.navbar {
+	padding: 30px 0;
+	position: relative;
+}
+
+media ="screen"
+.navbar {
+	margin-bottom: 20px;
+	overflow: visible;
+}
+
+input.ices-signin-text,input.ices-signin-password {
+	width: 75%;
+	display: block;
+	height: 30px;
+	padding-bottom: 10px;
+	padding: 4px 6px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #555;
+	vertical-align: middle;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border linear .2s, box-shadow linear .2s;
+	-moz-transition: border linear .2s, box-shadow linear .2s;
+	-o-transition: border linear .2s, box-shadow linear .2s;
+	transition: border linear .2s, box-shadow linear .2s;
+}
+
+div.middle-demo-2 {
+	padding-top: 40%;
+	padding-bottom: 40%;
+}
+
+.icesfont3 {
+	color: #263C53
+}
+
+.boxed-group {
+	position: relative;
+	background: #white;
+	padding: 3px;
+	border-radius: 3px;
+	margin: 0 0 15px 0;
+}
+
+.boxed-group>h3,.boxed-group .heading {
+	background-color: #e0e0e0;
+	background-image: linear-gradient(#fafafa, #e0e0e0);
+	background-repeat: repeat-x;
+	margin: 0;
+	border-top-left-radius: 1px;
+	border-top-right-radius: 1px;
+	border: 1px solid #d8d8d8;
+	border-bottom: none;
+	padding: 10px 10px 11px 10px;
+	font-size: 14px;
+	text-shadow: 0 1px 0 #fff;
+}
+
+.form-submit {
+	max-width:300px;
+	padding: 0px 29px 29px;
+	margin: 0 auto 20px;
+	background-color: #ddd;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+.form-submit div{
+	margin-bottom:0px;
+}

@@ -1,0 +1,15 @@
+body {
+	padding-top: 20px;
+	background: url(../img/bg-kr-g.gif) 0 0 repeat;
+}
+
+#top-nav {
+    margin-top: 1px;
+}
+#main-content {
+	margin: 0 auto 5px 0;
+	padding: 0px;
+	background: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 10px rgba(102, 102, 102, 0.1);
+}
