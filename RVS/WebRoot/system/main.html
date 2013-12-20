@@ -16,16 +16,73 @@
 	<script src="assets/js/util/jquery-1.10.2.js"></script>
 	<script src="assets/js/util/jquery.cookie.js"></script>
 </head>
-
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-1 "></div>
-			<div id="main-content" class="col-md-10">
-				<script type="text/javascript" src="assets/js/util/Header.js"></script>
+	<nav class="navbar navbar-default" role="navigation">
+	  	<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		      <span class="sr-only">Toggle navigation</span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		    </button>
+		    <a class="navbar-brand" href="#">HOME</a>
+		</div>
 
-			</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <ul class="nav navbar-nav">
+			    <li class="active"><a href="#">车 主</a></li>
+			    <li><a href="#">维修企业</a></li>
+		    </ul>
+		    <form class="navbar-form navbar-left" role="search">
+			    <div class="form-group">
+			    	<input type="text" class="form-control" placeholder="Search">
+			    </div>
+			    <button type="submit" class="btn btn-default">Submit</button>
+		    </form>
+		    <ul class="nav navbar-nav navbar-right">
+			    <li><a href="#">about</a></li>
+		    </ul>
+		</div>
+	</nav>
+	
+	<!-- the nav-buttons -->
+	<div class="row container text-center">
+		<div class="btn-group ">
+            <button type="button" id="loadingimg"  style="display: none"class="btn btn-default"> <img  src="../assets/img/loading.gif"/> loading...</button>
+			<button type="button" class="btn btn-default "  onclick="viewPaper();">维修记录
+				<span class="glyphicon glyphicon-user"></span>
+			</button>
+			<button type="button" class="btn btn-default "  onClick="location.href='../Submission/postpaperstep1.html'">	呼叫拖车<span class="glyphicon glyphicon-star"></span>
+			</button>
 		</div>
 	</div>
+
+	<hr />
+	<!-- the table content -->
+	<div class="row container well col-sm-offset-1 col-md-10">
+		<table class="table table-hover ">
+			<thead class="text-warning">
+				<tr>
+					<td class="text-center"> <span class="glyphicon glyphicon-user"></span> </td>
+					<td class="text-center"> 编号 </td>
+					<td class="text-center"> 维修车型 </td>
+					<td class="text-center"> 维修地点 </td>
+					<td class="text-center"> 维修公司 </td>
+					<td class="text-center"> 拖车编号 </td>
+					<td class="text-center"> 费用 </td>
+					<td class="text-center"> 状态 </td>
+
+					<td class="text-center"></td>
+                    <td class="text-center"></td>
+				</tr>
+			<thead>
+			<tbody id="paperTable">
+			</tbody>
+		</table>
+	</div>
+
+
 </body>
 </html>
