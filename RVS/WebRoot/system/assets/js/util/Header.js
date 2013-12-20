@@ -30,17 +30,6 @@ document.write('                   <li><a href="#"><span class="glyphicon glyphi
 document.write('                   <li><a href="#"><span class="glyphicon glyphicon-star"></span> Dispatch Center</a></li>');
 document.write('              </ul>');
 document.write('          </li>');
-//document.write('         <li><a href="#contact">Program</a></li>');
-//document.write('         <li><a href="/RMP-2/struts/PaperSys/login.html"><span class="glyphicon glyphicon-th-large"></span> Logout</a></li>');
-//document.write('         <li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown"><span class="glyphicon glyphicon-th-large"></span> Paper System<b class="caret"></b></a>');
-//document.write('           <ul class="dropdown-menu">');
-//document.write('                <li><a href="/RMP-2/struts/PaperSys/Sys_Home.html"><span class="glyphicon glyphicon-th-large"></span> System Home</a></li>');
-//document.write('                <li><a href="/RMP-2/struts/PaperSys/Author/index.html"><span class="glyphicon glyphicon-th-large"></span> Author Central</a></li>');
-//document.write('                <li><a href="/RMP-2/struts/PaperSys/Editor/index.html"><span class="glyphicon glyphicon-th-large"></span> Reviewer Central</a></li>');
-//document.write('                <li><a href="/RMP-2/struts/PaperSys/Review/index.html"><span class="glyphicon glyphicon-th-large"></span> PC-Chair Central</a></li>');
-//document.write('                <li><a href="/RMP-2/struts/PaperSys/login.html"><span class="glyphicon glyphicon-th-large"></span> Log out</a></li>');
-//document.write('              </ul>');
-//document.write('          </li>');
 document.write('       </ul>');
 document.write('  </div>');
 document.write('</div>');

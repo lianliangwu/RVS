@@ -33,15 +33,16 @@ function tuoche_register(){
 	$.ajax({
 		url:"/RVS/struts/RVS/Register.action?user_email="
 			+$("#emailAddress").val()+"&user_password="+$("#password").val(),
-		success:function(data){
-		var json = $.z4x(data);
-		if(json.success){
-			window.location.href="/RVS/system/login.html";
+		success:function(data) {
+		    console.log(data);
+			var json = $.z4x(data);
+			if(json.success){
+				window.location.href="/RVS/system/login.html";
+			} else {
+				alert("Error Code: Register failed");
+			}
+		    console.log(json);
 		}
-		else{
-			alert("Error Code: Register failed");
-		}
-	    console.log(json);}
 	})
 }
 

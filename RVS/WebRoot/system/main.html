@@ -1,60 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title>ICES 2014</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>RVS</title>
 
-<link rel="shortcut icon" type="image/x-icon" href="assets/img/rmp.ico" />
-<link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
-<link href="assets/css/base.css" rel="stylesheet">
-<link href="assets/css/header.css" rel="stylesheet">
-<script src="assets/js/jquery-1.10.2.min.js"></script>
-<script src="assets/js/jquery.cookie.js"></script>
-<script type="text/javascript">
-
-$(document).ready(	
-             function() {					
-				$(".centerCheck").click(
-						function(e) {
-							$.ajax({
-								url : "/RMP-2/struts/PaperSys/CenterCheck.action",
-								type: "POST",
-                                headers: {
-                                           "username" : $.cookie("username"),
-                                           "password": $.cookie("password")
-                                },
-								data: {
-                                         "role": $(this).attr("id")
-                                 },
-								success : function(data) {
-                                    if($(data).find("success").length>=1){
-                                         var next=$(data).find("next").text();
-                                         window.location.href=next;
-                                    }	
-                                    else{                                
-                                         alert("Error: "+$(data).find("Code").text()+". "+$(data).find("Reason").text());
-                                    }
-								},
-								error:function(data){
-								      alert("Error");
-								}
-							});
-						});		
-			});
-</script>
-<script src="assets/js/bootstrap.min.js"></script>
-
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
-<!--[if lt IE 9]>
-            <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
-            <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
- <![endif]-->
-
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/rmp.ico" />
+	<link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="assets/css/base.css" rel="stylesheet">
+	<link href="assets/css/header.css" rel="stylesheet">
+	<script src="assets/js/util/bootstrap.min.js"></script>
+	<script src="assets/js/util/jquery-1.10.2.js"></script>
+	<script src="assets/js/util/jquery.cookie.js"></script>
 </head>
 
 <body>
@@ -62,43 +22,10 @@ $(document).ready(
 		<div class="row">
 			<div class="col-md-1 "></div>
 			<div id="main-content" class="col-md-10">
-				<script type="text/javascript" src="assets/js/Header.js"></script>
-				<hr />
-				<div class="row ">
-					<div class="col-md-3 text-center">
-						<img src="assets/img/PaperSys.png" style="width:170" />
-					</div>
-					<div class="col-md-9">
-						<p class="text-warning">Welcome to the IEEE Conference on Enterprise System site. The center links below indicate which "roles" you can currently perform for the conference. <strong class="text-primary">Click on a link to begin working in the role (e.g., Author, Reviewer, etc.) in PaperSys Central</strong>. You can return to this screen to change centers at any time by clicking on the "ICES" link above.</p>
-					</div>
-				</div>
-                <hr />
-				<div id="text_content" class="row  text-center">
+				<script type="text/javascript" src="assets/js/util/Header.js"></script>
 
-					<div class="col-md-4">
-						<button type="button" id="AuthorCheck" class="btn btn-primary centerCheck">Author Central</button>
-					</div>
-					<div class="col-md-4">
-						<button type="button" id="EditorCheck" class="btn btn-primary centerCheck">PC Member</button>
-					</div>
-					<div class="col-md-4">
-						<button type="button" id="ChairCheck" class="btn btn-danger centerCheck">PC Chair</button>
-					</div>
-					<br /> <br />
-				</div>
-				<div class="col-md-1"></div>
 			</div>
-
 		</div>
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <br/>
-                <p class="text-center">Copyright © 2013-2014 IEEE Enterprise Systems Conference</p>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
 	</div>
-
 </body>
 </html>

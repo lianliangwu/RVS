@@ -17,8 +17,10 @@ import edu.sjtu.istlab.rvs.entity.User;
 public class Register extends ActionSupport{
 	
 	/**
+	 * will
 	 * 
 	 */
+	
 	private static final long serialVersionUID = -6100171461681948886L;
 	private String user_email="";
 	private String user_password="";
@@ -43,22 +45,28 @@ public class Register extends ActionSupport{
 			return ERROR;
 		}
 		try {
-			User user=new User(Utils.HOST+"/tuoche/resource/TuoChe/User/_new",null);
-/*			user.GET();
+		    //System.out.println("info:into the register action !");
+			User user=new User(Utils.HOST+"RVS/resource/RVS/User/_new",null);
+			user.GET();
 			user.setAttribute("user_email", user_email);
 			user.setAttribute("user_password",user_password);
-			user.setElementUri("PaperSys/User/"+user_email);
+			// ? why
+			// answer:the elementUri is the primary key
+			// user.setElementUri("RVS/User/"+user_email);
 			user.POST();
-			return SUCCESS;*/
-		    // this is temp-test for action
-			return user.GET().asXML();
+			// navigate to this page
+			sucessResult="<next> system/login.html </next>";
+			sucessResult="<success>"+sucessResult+"</success>";
+			return SUCCESS;
 		}
 		catch ( RmpResourceException e) {
 			errorResult=DORErrors.getErrorMessageXML(e.getMessage(), e.getCode()).asXML();
+			System.out.println("info:register action exception 1!");
 			return ERROR;
 		}
 		catch (Exception e) {
 			errorResult=DORErrors.getErrorMessageXML(e.getMessage(), 700).asXML();
+			System.out.println("info:register action exception 2!");
 			return ERROR;
 		}
 	}
