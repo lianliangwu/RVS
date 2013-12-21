@@ -1,2 +1,7 @@
 classes
 lib
+.classpath
+.externalToolBuilders
+.mymetadata
+.project
+.settings
