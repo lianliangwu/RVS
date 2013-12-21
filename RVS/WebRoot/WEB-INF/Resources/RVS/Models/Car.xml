@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Resource isMaster="true" isAssociation="false" isComposite="false">
 	<DBConfig>
-		<DBURL>localhost/rvs/car</DBURL>
-		<UserName>root</UserName>
-		<Password>123456</Password>
+		<DBURL>202.120.40.69/cm/test_rvs_car</DBURL>
+		<UserName>cm</UserName>
+		<Password>cm</Password>
 		<Driver>com.mysql.jdbc.Driver</Driver>
 	</DBConfig>
 	<URI>RVS/Car/{key}</URI>
