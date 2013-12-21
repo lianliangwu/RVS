@@ -5,7 +5,7 @@
  * Time: 下午2:45
  * To change this template use File | Settings | File Templates.
  */
-var orderUri = '/RVS/resource/RVS/order/*';
+var orderUri = '/RVS/resource/RVS/Order/*';
 var orderModel = ko.observableArray();
 var header = {
     "username": $.cookie("username"),
@@ -45,7 +45,7 @@ $(
         }});
         ko.applyBindings(orderModel);
     }
-)
+);
 
 
 function orderCallback(ret) {
@@ -58,7 +58,7 @@ function orderCallback(ret) {
 }
 
 function reload() {
-    $.ajax({url: currentUri, success: orderCallback})
+    $.ajax({url: currentUri, success: orderCallback});
 }
 
 

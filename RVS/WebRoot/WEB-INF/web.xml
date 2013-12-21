@@ -25,7 +25,6 @@
 
     <!-- RMP  Welcome-->
 	<welcome-file-list>
-		<welcome-file>index.xhtml</welcome-file>
-		<welcome-file>index.html</welcome-file>
+		<welcome-file>system/login.html</welcome-file>
 	</welcome-file-list>
 </web-app>

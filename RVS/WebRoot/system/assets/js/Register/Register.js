@@ -49,7 +49,7 @@ function tuoche_register(){
 
 function login(){
 	$.ajax({
-		url:"/RVS/resource/rvs/user/?user_email="+$("#emailAddress").val()+"&user_password="+$("#password").val(),
+		url:"/RVS/resource/RVS/User/?user_email="+$("#emailAddress").val()+"&user_password="+$("#password").val(),
 		headers:{
 			username:$("#emailAddress").val(),
 			password:$("#password").val()
